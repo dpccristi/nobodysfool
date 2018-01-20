@@ -1,72 +1,102 @@
-
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
 body {
-    padding:0;
-    margin:0;
-    background-color:#3C3C3C;
+
+    background-color: #3C3C3C;
 }
 
-.header{
-    background-color:ghostwhite;
+.header {
+    background-color: ghostwhite;
     padding-bottom: 20px;
     padding-top: 20px;
-
+    border-bottom: #9d9d9d;
 
 }
 
-
-.header ul li{
-   display:inline;
+.header ul li {
+    display: inline;
     font-size: medium;
+    padding-bottom: 10px;
     padding-right: 10px;
     font-family: "Times New Roman", Georgia, Serif;
     text-transform: uppercase;
 }
-.header ul li:hover{
+
+.header ul li:hover {
     border-bottom: 8px solid dodgerblue;
     font-color: gray;
     opacity: 0.5;
 }
-.header ul{
 
-    width: auto;
+.container ul {
+
     border-bottom: 5px solid silver;
     margin-bottom: 10px;
+    padding-left: 0px;
+    padding-bottom: 5px;
+    width: 781px !important;
+    line-height: 31px;
+
+}
+#textul{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 2px;
+
 
 }
 
-.clear {
+#h1nobody {
+
+    margin-top: 50px;
+}
+
+.clear ul li {
     display: block;
-    clear: both;
+    display: inline;
+    opacity: 1;
 }
-.clear h1{
-    font-family: "opensansregular",Arial,Helvetica,sans-serif;;
+
+.header h1 {
+    border-top: 50px;
+    font-family: "opensansregular",Arial,Helvetica,sans-serif;
 }
-.clear p{
-    font-family: "opensansregular",Arial,Helvetica,sans-serif;;
+
+form {
+
+    float: right;
+    display: inline;
 }
-li:visited{
-    color: #000;
+/*
+form input {
+    background-color: #b2dba1;
+}width: auto;
+*/
+#butonas {
+    padding-bottom: 7px;
+    padding-top: 4px;
+    text-transform: uppercase;
+
 }
-.divid{
+
+
+.divid {
     display: inline;
 }
 
-
-
-.middleSection{
+.middleSection {
     padding-bottom: 20px;
     padding-top: 20px;
 }
-.sectiuneTrei{
+
+.sectiuneTrei {
     padding-bottom: 20px;
     padding-top: 20px;
 }
-.footer{
+
+.footer {
     padding-bottom: 20px;
     padding-top: 20px;
 }
