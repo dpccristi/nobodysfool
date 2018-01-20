@@ -2,10 +2,6 @@
    Author's custom styles
    ========================================================================== */
 
-body {
-
-    background-color: #3C3C3C;
-}
 
 .header {
     background-color: ghostwhite;
@@ -74,7 +70,7 @@ form input {
     background-color: #b2dba1;
 }width: auto;
 */
-#butonas {
+.butonas {
     padding-bottom: 7px;
     padding-top: 4px;
     text-transform: uppercase;
@@ -85,11 +81,27 @@ form input {
 .divid {
     display: inline;
 }
+#div1 h1{
+
+   padding-top: 100px;
+    margin-right: 20px;
+    padding-bottom: 10px;
+}
+#div1 h4{
+  padding-bottom: 10px;
+}
+#div1{
+    border: 2px #0f0f0f;
+}
 
 .middleSection {
     padding-bottom: 20px;
     padding-top: 20px;
+    background-color: silver;
+    border-top:20px gold;
+
 }
+
 
 .sectiuneTrei {
     padding-bottom: 20px;
