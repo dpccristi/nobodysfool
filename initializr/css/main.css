@@ -4,15 +4,72 @@
    Author's custom styles
    ========================================================================== */
 
+body {
+    padding:0;
+    margin:0;
+    background-color:#3C3C3C;
+}
+
+.header{
+    background-color:ghostwhite;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+
+}
+
+
+.header ul li{
+   display:inline;
+    font-size: medium;
+    padding-right: 10px;
+    font-family: "Times New Roman", Georgia, Serif;
+    text-transform: uppercase;
+}
+.header ul li:hover{
+    border-bottom: 8px solid dodgerblue;
+    font-color: gray;
+    opacity: 0.5;
+}
+.header ul{
+
+    width: auto;
+    border-bottom: 5px solid silver;
+    margin-bottom: 10px;
+
+}
+
+.clear {
+    display: block;
+    clear: both;
+}
+.clear h1{
+    font-family: "opensansregular",Arial,Helvetica,sans-serif;;
+}
+.clear p{
+    font-family: "opensansregular",Arial,Helvetica,sans-serif;;
+}
+li:visited{
+    color: #000;
+}
+.divid{
+    display: inline;
+}
 
 
 
-
-
-
-
-
-
+.middleSection{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.sectiuneTrei{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.footer{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
 
 
 
