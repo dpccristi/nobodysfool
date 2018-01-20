@@ -1,8 +1,6 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-
 .header {
     background-color: ghostwhite;
     padding-bottom: 20px;
@@ -26,7 +24,7 @@
     opacity: 0.5;
 }
 
-.container ul {
+.header ul {
 
     border-bottom: 5px solid silver;
     margin-bottom: 10px;
@@ -105,17 +103,76 @@ form input {
 
 .sectiuneTrei {
     padding-bottom: 20px;
-    padding-top: 20px;
+
+    padding-top: 100px;
+    background-color: gray;
+}
+
+.sectiuneTrei #div3 {
+    text-decoration-color: #b2dba1;
+    text-align: center;
+
+}
+.div2 {
+
+
+    color:cornflowerblue;
+}
+.divide{
+    background-color: #b2dba1;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+    padding-left: 80px;
+    margin-bottom: 20px;
+}
+.divide input {
+    margin-top: 25px;
 }
 
 .footer {
     padding-bottom: 20px;
     padding-top: 20px;
+    background-color: #0f0f0f;
+}
+.h1l {
+    color: white;
+    padding-left: 20px;
+}
+.alb{
+    padding-top: 10px;
+    color: white;
+}
+.read{
+    float: right;
+
 }
 
+.lista {
+    list-style: none;
+}
+.lista li {
+    border-bottom: white;
+}
+.h1l p {
+    color:gray;
+    font-size: small;
+    margin-bottom: 0px;
+}
+.gry{
+    color: gray;
+
+}
+.message{
+    width: 210px;
+    height: 150px;
+    font-size:14pt;
+}
+#buton{
+    margin-top:10px;
+}
+#message {
 
 
-
-
-
-
+}
