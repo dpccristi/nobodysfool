@@ -26,7 +26,7 @@
 
 .header ul {
 
-    border-bottom: 7px solid silver;
+    border-bottom: 7px #FFFFFF;
     margin-bottom: 10px;
     padding-left: 0px;
     padding-bottom: 5px;
@@ -34,12 +34,23 @@
     line-height: 31px;
 
 }
-#textul{
+
+#textul {
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 2px;
 
+}
 
+.bar {
+    background-color: #2D2D2D;
+   padding: 10px;
+    border-bottom: #9d9d9d;
+}
+
+.bar ul li {
+    color: white;
+    display: inline;
 }
 
 #h1nobody {
@@ -55,7 +66,7 @@
 
 .header h1 {
     border-top: 50px;
-    font-family: "opensansregular",Arial,Helvetica,sans-serif;
+    font-family: "opensansregular", Arial, Helvetica, sans-serif;
 }
 
 form {
@@ -63,6 +74,7 @@ form {
     float: right;
     display: inline;
 }
+
 /*
 form input {
     background-color: #b2dba1;
@@ -75,37 +87,38 @@ form input {
 
 }
 
-
 .divid {
     display: inline;
 }
-#div1 h1{
 
-   padding-top: 100px;
+#div1 h1 {
+
+    padding-top: 100px;
     margin-right: 20px;
     padding-bottom: 10px;
 }
-#div1 h4{
-  padding-bottom: 10px;
+
+#div1 h4 {
+    padding-bottom: 10px;
 }
-#div1{
+
+#div1 {
     border: 2px #0f0f0f;
 }
 
 .middleSection {
     padding-bottom: 20px;
     padding-top: 20px;
-    background-color: silver;
-    border-top:20px gold;
+    background-color: #F1F1F1;
+
 
 }
-
 
 .sectiuneTrei {
     padding-bottom: 20px;
 
     padding-top: 100px;
-    background-color: gray;
+    background-color: #FFFFFF;
 }
 
 .sectiuneTrei #div3 {
@@ -114,20 +127,24 @@ form input {
     margin-bottom: 15px;
 
 }
+
 .div2 {
 
-
-    color:cornflowerblue;
+    color: cornflowerblue;
 }
-.divide{
-    background-color: #b2dba1;
 
-    padding-top: 10px;
-    padding-bottom: 10px;
+.divide {
+
+    background-color: #b2dba1;
+    border-left: 10px solid dodgerblue;
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-right: 50px;
     padding-left: 80px;
     margin-bottom: 20px;
+
 }
+
 .divide input {
     margin-top: 25px;
 }
@@ -135,17 +152,20 @@ form input {
 .footer {
     padding-bottom: 20px;
     padding-top: 20px;
-    background-color: #0f0f0f;
+    background-color: #1A1A1A;
 }
+
 .h1l {
     color: white;
     padding-left: 20px;
 }
-.alb{
+
+.alb {
     padding-top: 10px;
     color: white;
 }
-.read{
+
+.read {
     float: right;
 
 }
@@ -153,27 +173,44 @@ form input {
 .lista {
     list-style: none;
 }
+
 .lista li {
     border-bottom: white;
 }
+
 .h1l p {
-    color:gray;
+    color: gray;
     font-size: small;
     margin-bottom: 0px;
 }
-.gry{
+
+.gry {
     color: gray;
+}
+
+textarea {
+    resize: none;
+}
+
+#buton {
+    margin-top: 10px;
+}
+
+.message {
+    background: #9d9d9d;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    border-color: transparent;
 
 }
-.message{
-    width: 210px;
-    height: 150px;
-    font-size:14pt;
-}
-#buton{
-    margin-top:10px;
-}
-#message {
 
+.button {
+    background-color: #4CAF50;
+    border: none;
+    display: inline-block;
+}
 
+.button5 {
+    border-radius: 50%;
+    float: right;
 }
