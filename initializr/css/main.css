@@ -47,10 +47,14 @@
    padding: 10px;
     border-bottom: #9d9d9d;
 }
+.bar ul {
+    margin-top:20px;
+}
 
 .bar ul li {
     color: white;
     display: inline;
+
 }
 
 #h1nobody {
@@ -112,6 +116,12 @@ form input {
     background-color: #F1F1F1;
 
 
+}
+.format{
+    width: 50%;
+    height: 50%;
+    
+    float: right;
 }
 
 .sectiuneTrei {

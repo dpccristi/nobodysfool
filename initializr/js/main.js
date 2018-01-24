@@ -1,16 +1,9 @@
 
-function test() {
-    return $("#textul").val();
-}
-console.log(test());
-
-console.log('inputup are valoarea', $("#textul").val());
-$("#div1 h1").text();
-
-
-
-
-
+$("#myButton").click(function ()
+{
+    alert("Buton functional")
+});
+/*
 var i = 1;
 window.setInterval(pluteste, 500);
 function pluteste() {
@@ -49,4 +42,5 @@ function pluteste() {
     })
 
 
-}
+}*/
+
