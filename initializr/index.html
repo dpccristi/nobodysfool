@@ -1,5 +1,6 @@
 <!doctype html>
 <html xmlns:color="http://www.w3.org/1999/xhtml">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -21,17 +22,17 @@
         <div class="row">
             <div class="col-8">
                 <ul style="padding-left: 0">
-                <li>Sign Up |</li>
-                <li>Login |</li>
-                <li>Rss Feeds |</li>
-                <li>Archived News</li>
-            </ul>
+                    <li>Sign Up |</li>
+                    <li>Login |</li>
+                    <li>Rss Feeds |</li>
+                    <li>Archived News</li>
+                </ul>
             </div>
             <div class="col-4">
 
-                    <img src="images/facebook-newsletter-logo.png" width="18%" class="button5">
-                    <img src="images/Youtube-logo.png" width="18%" class="button5">
-                    <img src="images/social-inside-linkedin-icon.png" width="18%" class="button5">
+                <img src="images/facebook-newsletter-logo.png" width="18%" class="button5">
+                <img src="images/Youtube-logo.png" width="18%" class="button5">
+                <img src="images/social-inside-linkedin-icon.png" width="18%" class="button5">
 
             </div>
         </div>
@@ -70,20 +71,52 @@
 Sectiunea a doua-->
 
 <section class="middleSection" style="border-top: 6px solid #E9E9E9;">
+
     <div class="middleSection container">
-        <div class="row">
-            <div class="col" id="div1">
-                <h1>Your title can be long and descriptive</h1>
-                <h4>Cirsispemsatosaccim it ciranotis nella tellus
-                    tor ames a in curabitur pede. Idet mollissi eroscongue elis et curabitu</h4>
-                <input type="button" value="Read more>>" class="btn btn-primary btn-sm butonas" id="buton1">
+
+        <!-- <div class="row">
+             <div class="col" id="div1">
+                 <h1>Your title can be long and descriptive</h1>
+                 <h4>Cirsispemsatosaccim it ciranotis nella tellus
+                     tor ames a in curabitur pede. Idet mollissi eroscongue elis et curabitu</h4>
+                 <input type="button" value="Read more>>" class="btn btn-primary btn-sm butonas" id="buton1">
+             </div>
+
+             <div class="col">
+                 <img src="https://vignette.wikia.nocookie.net/animal-jam-clans-1/images/8/88/SeebebebeNE.png/revision/latest?cb=20161124001745"
+                      width="120%" align="right"/>
+             </div>
+         </div>-->
+        <div class="w3-content w3-display-container">
+            <img class="mySlides myImg" id="myImg"
+                 src="https://best-wallpaper.net/wallpaper/1024x768/1202/City-of-Paris-France-Eiffel-Tower_1024x768.jpg">
+            <img class="mySlides myImg" id="myImg1"
+                 src="http://www.darekkocurek.com/images/l/best_wallpapers/dragonfly-wallpaper-1024x768.jpg">
+            <img class="mySlides myImg" id="myImg2"
+                 src="https://best-wallpaper.net/wallpaper/1024x768/1108/Space-ship-and-blue-planet_1024x768.jpg">
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+                <!-- The Close Button -->
+                <span class="close">&times;</span>
+
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="img01">
+                <img class="modal-content" id="img02">
+                <img class="modal-content" id="img03">
+
+
             </div>
 
-            <div class="col">
-                <img src="https://vignette.wikia.nocookie.net/animal-jam-clans-1/images/8/88/SeebebebeNE.png/revision/latest?cb=20161124001745"
-                     width="120%" align="right"/>
+            <div class="w3-center w3-display-bottommiddle" style="width:100%">
+                <span class="w3-badge demo w3-border" onclick="currentDiv(1)"></span>
+                <span class="w3-badge demo w3-border" onclick="currentDiv(2)"></span>
+                <span class="w3-badge demo w3-border" onclick="currentDiv(3)"></span>
+                <span class="w3-badge demo w3-border" onclick="currentDiv(4)"></span>
+                <span class="w3-badge demo w3-border" onclick="currentDiv(5)"></span>
             </div>
         </div>
+
     </div>
 </section>
 
