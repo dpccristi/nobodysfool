@@ -3,7 +3,7 @@ $("#myButton").click(function ()
 {
     alert("Buton functional")
 });
-/*
+
 var i = 1;
 window.setInterval(pluteste, 500);
 function pluteste() {
@@ -42,5 +42,5 @@ function pluteste() {
     })
 
 
-}*/
+} 
 
