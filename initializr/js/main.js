@@ -1,73 +1,68 @@
+var activateSlide = function (s) {
+console.log(s);
+    $(".myImg").removeClass("active");
+    $(".myImg[slide='" + s + "']").addClass("active");
+
+    $(".sliderButton li").removeClass("active");
+    $(".sliderButton li[slide='" + s + "']").addClass("active");
+
+    $(".header4").removeClass("active");
+    $(".header4[slide='" + s + "']").addClass("active");
+
+    $(".middleSection").removeClass("black").removeClass("red").removeClass("green");
+
+        if( s == 1){
+            $(".middleSection").addClass("black");
+
+        }
+        else if( s == 2){
+            $(".middleSection").addClass("green");
+
+        }else {
+            $(".middleSection").addClass("red");
+        }
+};
+
+$(".sliderButton li").click(function () {
 
 
+    activateSlide($(this).attr("slide"));
 
-var slideIndex = 1;
-showDivs(slideIndex);
+});
 
-function plusDivs(n) {
-    showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-    showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("demo");
-    if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length}
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" w3-white", "");
-    }
-    x[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " w3-white";
-}
-
-var modal = document.getElementById('myModal');
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById('myImg');
-var img1 = document.getElementById('myImg1');
-var img2 = document.getElementById('myImg2');
-
-var modalImg = document.getElementById("img01");
-var modalImg1 = document.getElementById("img02");
-var modalImg2 = document.getElementById("img03");
-
-img.onclick = function(){
-    modal.style.display = "block";
-
-    modalImg.src = this.src;
-    $(".middleSection").css("background-color","yellow");
+$(document).ready(function () {
+    activateSlide(1);
+});
 
 
+//Task_14: Links prevent changing the page
+$("a").click(function (event) {
+    event.preventDefault();
+    $(this).attr('href', "https://www.facebook.com");
+    var lnk = $(this).attr('href');
+    alert(lnk);
+});
 
-}
-img1.onclick = function () {
-    modal.style.display = "block";
-    modalImg1.src = this.src;
-    $(".middleSection").css("background-color","green");
+//Task_15;
+$("[type='submit']").click(function (e) {
+    e.preventDefault();
+    var d = new Date();
+    var n = d.getDate();
 
-}
-img2.onclick = function () {
-    modal.style.display = "block";
-    modalImg2.src = this.src;
-    $(".middleSection").css("background-color","red ");
+    var obiect = {
+        custom: {
+            data: n,
+            local_url: window.location.href
+        }
+    };
 
-}
+    $(this).parent().children().each(function (i, v) {
+        if ($(v).hasClass("message")) {
+            obiect[$(v).attr('name')] = $(v).val();
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+        }
+    });
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-    $("body").animate({
-        opacity: '1.0',
-    })
-}
+    console.log(obiect);
+});
+
