@@ -35,7 +35,12 @@
 
 }
 
-#textul {
+.header h1 {
+    border-top: 50px;
+    font-family: "opensansregular", Arial, Helvetica, sans-serif;
+}
+
+.header form [type="text"] {
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 2px;
@@ -44,11 +49,13 @@
 
 .bar {
     background-color: #2D2D2D;
-   padding: 10px;
+    padding: 10px;
     border-bottom: #9d9d9d;
 }
+
 .bar ul {
-    margin-top:20px;
+    margin-top: 20px;
+    padding-left: 0;
 }
 
 .bar ul li {
@@ -57,72 +64,44 @@
 
 }
 
-
-
-.clear ul li {
-    display: block;
-    display: inline;
-    opacity: 1;
-}
-
-.header h1 {
-    border-top: 50px;
-    font-family: "opensansregular", Arial, Helvetica, sans-serif;
-}
-
-form {
+.header form {
 
     float: right;
     display: inline;
+    margin-top: -40px;
 }
 
-/*
-form input {
-    background-color: #b2dba1;
-}width: auto;
-*/
-.butonas {
+.header form [type="button"] {
     padding-bottom: 7px;
     padding-top: 4px;
     text-transform: uppercase;
-
+    margin-top: -5px;
 }
 
-.divid {
-    display: inline;
-}
-
-#div1 h1 {
+.middleSection > .container > .row > .col:nth-child(1) h1 {
 
     padding-top: 100px;
     margin-right: 20px;
     padding-bottom: 10px;
 }
 
-#div1 h4 {
+.middleSection > .container > .row > .col:nth-child(1) h4 {
     padding-bottom: 10px;
 }
 
-#div1 {
+.middleSection > .container > .row > .col:nth-child(1) {
     border: 2px #0f0f0f;
 }
 
 .middleSection {
-
+    border-top: 6px solid #E9E9E9;
     background-color: #F1F1F1;
 
-
-}
-.format{
-    width: 50%;
-    height: 50%;
-    
-    float: right;
 }
 
 .sectiuneTrei {
     padding-bottom: 20px;
-
+    border-top: 6px solid #E9E9E9;
     padding-top: 100px;
     background-color: #FFFFFF;
 }
@@ -134,13 +113,12 @@ form input {
 
 }
 
-.div2 {
+.sectiuneTrei #div3 h5 {
 
     color: cornflowerblue;
 }
 
 .divide {
-
     background-color: #b2dba1;
     border-left: 10px solid dodgerblue;
     padding-top: 20px;
@@ -161,14 +139,16 @@ form input {
     background-color: #1A1A1A;
 }
 
-.h1l {
+.footer .row h5 {
     color: white;
-    padding-left: 20px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .alb {
     padding-top: 10px;
     color: white;
+    list-style: none;
 }
 
 .read {
@@ -184,7 +164,7 @@ form input {
     border-bottom: white;
 }
 
-.h1l p {
+p.h1l {
     color: gray;
     font-size: small;
     margin-bottom: 0px;
@@ -198,8 +178,9 @@ textarea {
     resize: none;
 }
 
-#buton {
-    margin-top: 10px;
+.footer [type="submit"] {
+    margin-top: 20px;
+    margin-left: 40px;
 }
 
 .message {
@@ -207,36 +188,19 @@ textarea {
     border-radius: 8px;
     margin-bottom: 5px;
     border-color: transparent;
-
-}
-
-.button {
-    background-color: #4CAF50;
-    border: none;
-    display: inline-block;
 }
 
 .button5 {
     border-radius: 50%;
     float: right;
+    width: 18%;
 }
-
-.buttons {
-    margin:auto;
-
-}
-.margin {
-    margin-top: 10px;
-}
-/*
-sda*/
-
 
 .sliderButton {
 
     list-style: none;
-    position:absolute;
-    bottom:0;
+    position: absolute;
+    bottom: 0;
 
 }
 
@@ -247,24 +211,31 @@ sda*/
     height: 15px;
     display: inline-block;
     border-radius: 50%;
-    border:2px solid black;
-    cursor:pointer;
+    border: 2px solid black;
+    cursor: pointer;
 }
-.sliderButton li.active{
+
+.sliderButton li.active {
     background-color: whitesmoke;
 }
 
-.hide{
-    display: none;
-}
 .myImg {
     max-width: 100%;
     display: none;
 
-
 }
 
-.myImg.active{
+.sectiuneTrei > .container > .row > .col:first-child img {
+
+    width: 100%;
+}
+
+.sectiuneTrei > .container > .row > .col:nth-child(2) img {
+
+    width: 85%;
+}
+
+.myImg.active {
     display: block;
 
 }
@@ -272,6 +243,7 @@ sda*/
 .red {
     background-color: darkred !important;
 }
+
 .black {
     background-color: black !important;
 }
@@ -288,22 +260,12 @@ sda*/
     display: block;
 }
 
-.alb{
-    list-style: none;
+.myImg:hover {
+    opacity: 0.7;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
 }
-
-#myImg:hover {opacity: 0.7;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;}
-#myImg2:hover {opacity: 0.7;
-    border-radius: 13px;
-    cursor: pointer;
-    transition: 0.3s;}
-#myImg3:hover {opacity: 0.7;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;}
 
 /* The Modal (background) */
 .modal {
@@ -316,8 +278,8 @@ sda*/
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
 }
 
 /* Modal Content (image) */
@@ -328,20 +290,8 @@ sda*/
     max-width: 700px;
 }
 
-/* Caption of Modal Image */
-#caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
-}
-
 /* Add Animation */
-.modal-content, #caption {
+.modal-content {
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;
@@ -349,13 +299,21 @@ sda*/
 }
 
 @-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)}
-    to {-webkit-transform:scale(1)}
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
 }
 
 @keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(1)}
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
 }
 
 /* The Close Button */
@@ -376,9 +334,10 @@ sda*/
     cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 700px) {
     .modal-content {
         width: 100%;
     }
 }
+
+
